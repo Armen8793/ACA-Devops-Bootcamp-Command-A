@@ -7,7 +7,7 @@ on:
       - main
   pull_request:
   
- defaults:
+defaults:
   run:
     shell: bash  
 jobs:
