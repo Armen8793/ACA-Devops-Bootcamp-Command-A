@@ -14,7 +14,7 @@ jobs:
     - name: CommandA-unittest result
       run: echo "The result of CommandA-unittest Action was ${{ steps.action-ACA-Devops-Bootcamp-Command-A.outputs.result }}"
     - name: Push changes
-      if: github.ref == 'refs/heads/main
+      if: github.ref == 'refs/heads/main'
       uses: Armen8793/ACA-Devops-Bootcamp-Command-A@main
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
