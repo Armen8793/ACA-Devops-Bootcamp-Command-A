@@ -12,7 +12,7 @@ jobs:
       id: action-CommandA
       uses: Armen8793/ACA-Devops-Bootcamp-Command-A@main
     - name: CommandA-unittest result
-      run: echo "The result of CommandA-unittest Action was ${{ steps.action-CommandA.outputs.result }}"
+      run: echo "The result of CommandA-unittest Action was ${{ steps.action-ACA-Devops-Bootcamp-Command-A.outputs.result }}"
     - name: Commit files
       run: |
         echo ${{ github.ref }}
