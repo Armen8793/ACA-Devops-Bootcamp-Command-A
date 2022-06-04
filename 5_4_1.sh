@@ -1,9 +1,15 @@
 #!/bin/bash
 
+if [[ $USER == root ]]
+then
+	./nginx-install.sh
+	./nginx-direct.sh
+	./device-info.sh &
 
-watch -n10 -x ./5_4.sh >> /var/www/bootcamp_aca/index.html &
+else
+	 echo "Permission denied: run script as root"
+fi
 
-jobs
 
 
 
