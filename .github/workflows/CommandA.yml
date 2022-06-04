@@ -22,6 +22,6 @@ jobs:
         git commit -m "CI: Automated build push" -a | exit 0
     - name: Push changes
       if: github.ref == 'refs/heads/master'
-      uses: Armen8793/ACA-Devops-Bootcamp-Command-A@master
+      uses: Armen8793/ACA-Devops-Bootcamp-Command-A@main
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
