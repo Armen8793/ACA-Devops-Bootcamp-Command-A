@@ -13,6 +13,14 @@ jobs:
       uses: Armen8793/ACA-Devops-Bootcamp-Command-A@main
     - name: CommandA-unittest result
       run: echo "The result of CommandA-unittest Action was ${{ steps.action-ACA-Devops-Bootcamp-Command-A.outputs.result }}"
+      - name: Commit files
+      run: |
+        echo ${{ github.ref }}
+        git add .
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "CI: Automated build push" -a | exit 0
+    - name: Push changes
     - name: Push changes
       if: github.ref == 'refs/heads/main'
       uses: Armen8793/ACA-Devops-Bootcamp-Command-A@main
