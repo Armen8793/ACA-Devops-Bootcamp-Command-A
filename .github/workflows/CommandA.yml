@@ -9,7 +9,6 @@ jobs:
       matrix:
         nginx-versions: ['1.18.0']
     name: PHP ${{ matrix.nginx-versions }} Test on ${{ matrix.os }}
-    
 - name: Checkout
   uses: actions/checkout@v2
 
