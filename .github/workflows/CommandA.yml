@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Our ACA team script Unit test
       id: ACA-Devops-Bootcamp-Command-A 
-      uses: Armen8793/ACA-Devops-Bootcamp-Command-A@main
+      uses: Armen8793/ACA-Devops-Bootcamp-Command-A@Armen8793
     - name: CommandA-unittest result
       run: echo "The result of CommandA-unittest Action was ${{ steps.ACA-Devops-Bootcamp-Command-A.outputs.result }}"
       - name: Commit files
