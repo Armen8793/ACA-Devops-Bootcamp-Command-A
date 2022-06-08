@@ -11,4 +11,4 @@ After installing Nginx we maust go to nginx_direct.sh file for redirecting our s
 Then is device_info.sh, which is showing some info about our device
 
 
-At last for running the whole commands you have to run the "run_all.sh" script
+At last for running the whole commands you have to run the "run_all.sh" script!:
